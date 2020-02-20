@@ -3,19 +3,19 @@ let predictedAges = [];
 
 Promise.all([
   faceapi.nets.tinyFaceDetector.loadFromUri(
-    "https://github.com/mahendra0859/Face-Recognition-Using-JavaScript/tree/master/models"
+    "https://github.com/justadudewhohacks/face-api.js/tree/master/weights"
   ),
   faceapi.nets.faceLandmark68Net.loadFromUri(
-    "https://github.com/mahendra0859/Face-Recognition-Using-JavaScript/tree/master/models"
+    "https://github.com/justadudewhohacks/face-api.js/tree/master/weights"
   ),
   faceapi.nets.faceRecognitionNet.loadFromUri(
-    "https://github.com/mahendra0859/Face-Recognition-Using-JavaScript/tree/master/models"
+    "https://github.com/justadudewhohacks/face-api.js/tree/master/weights"
   ),
   faceapi.nets.faceExpressionNet.loadFromUri(
-    "https://github.com/mahendra0859/Face-Recognition-Using-JavaScript/tree/master/models"
+    "https://github.com/justadudewhohacks/face-api.js/tree/master/weights"
   ),
   faceapi.nets.ageGenderNet.loadFromUri(
-    "https://github.com/mahendra0859/Face-Recognition-Using-JavaScript/tree/master/models"
+    "https://github.com/justadudewhohacks/face-api.js/tree/master/weights"
   )
 ]).then(startVideo);
 
