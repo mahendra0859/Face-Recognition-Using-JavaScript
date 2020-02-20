@@ -2,21 +2,11 @@ const video = document.getElementById("video");
 let predictedAges = [];
 
 Promise.all([
-  faceapi.nets.tinyFaceDetector.loadFromUri(
-    "https://github.com/mahendra0859/Face-Recognition-Using-JavaScript/tree/master/models"
-  ),
-  faceapi.nets.faceLandmark68Net.loadFromUri(
-    "https://github.com/mahendra0859/Face-Recognition-Using-JavaScript/tree/master/models"
-  ),
-  faceapi.nets.faceRecognitionNet.loadFromUri(
-    "https://github.com/mahendra0859/Face-Recognition-Using-JavaScript/tree/master/models"
-  ),
-  faceapi.nets.faceExpressionNet.loadFromUri(
-    "https://github.com/mahendra0859/Face-Recognition-Using-JavaScript/tree/master/models"
-  ),
-  faceapi.nets.ageGenderNet.loadFromUri(
-    "https://github.com/mahendra0859/Face-Recognition-Using-JavaScript/tree/master/models"
-  )
+  faceapi.nets.tinyFaceDetector.loadFromUri("/"),
+  faceapi.nets.faceLandmark68Net.loadFromUri("/"),
+  faceapi.nets.faceRecognitionNet.loadFromUri("/"),
+  faceapi.nets.faceExpressionNet.loadFromUri("/"),
+  faceapi.nets.ageGenderNet.loadFromUri("/")
 ]).then(startVideo);
 
 function startVideo() {
